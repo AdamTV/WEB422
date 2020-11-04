@@ -1,0 +1,19 @@
+<!-- this file contains angular (template) -->
+
+<p>foo works!</p>
+<!-- interpolation -->
+<p>Student Name: {{ studentName }}</p>
+
+<!-- embedding an “expression” using interpolation. text between curly braces is a (template) expression -->
+<!-- <div><img src="{{studentPhoto}}"></div> -->
+
+<!-- event binding. click is event name and toggleImage() is template statement -->
+<button (click)="toggleImage()">Toggle Image</button>
+
+<br/>
+
+<!-- property binding syntax -->
+<img [src]="photos[currentPhoto]">
+
+<!-- toLocaleDateString method executed on studentUpdated proeprty -->
+<p>Student Updated: {{studentUpdated.toLocaleDateString()}}</p>
