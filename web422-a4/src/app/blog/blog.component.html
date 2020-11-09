@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <!-- posts -->
-            <app-post-card class="post col-xl-6" [post]="p" *ngFor="let p of blogPosts"></app-post-card>        
+            <app-post-card class="post col-xl-6" [post]="p" [id]="blogPosts.indexOf(p)" *ngFor="let p of blogPosts"></app-post-card>        
         </div>
       </div>
     </main>

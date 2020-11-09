@@ -9,6 +9,7 @@ import { BlogPost } from '../BlogPost';
 export class PostCardComponent implements OnInit {
 
   @Input() post: BlogPost;
+  @Input() id: string;
 
   constructor() { }
 

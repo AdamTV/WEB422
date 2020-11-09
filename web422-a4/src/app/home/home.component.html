@@ -27,11 +27,11 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>{{blogPosts[3].category}}</a></div><a routerLink="/post">
+              <div class="category"><a routerLink="/post/3">{{blogPosts[3].category}}</a></div><a routerLink="/post/3">
                 <h2 class="h4">{{blogPosts[3].title}}</h2></a>
             </header>
             <p [innerHtml]="blogPosts[3].post"></p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink class="author d-flex align-items-center flex-wrap">
+            <footer class="post-footer d-flex align-items-center"><a routerLink="/post/3" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar"><img src="/assets/img/user.svg" alt="..." class="img-fluid"></div>
                 <div class="title"><span>{{blogPosts[3].postedBy}}</span></div></a>
               <div class="date"><i class="icon-clock"></i>{{blogPosts[3].postDate}}</div>
@@ -49,11 +49,11 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>{{blogPosts[4].category}}</a></div><a routerLink="/post">
+              <div class="category"><a routerLink="/post/4">{{blogPosts[4].category}}</a></div><a routerLink="/post/4">
                 <h2 class="h4">{{blogPosts[4].title}}</h2></a>
             </header>
             <p [innerHtml]="blogPosts[4].post"></p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink class="author d-flex align-items-center flex-wrap">
+            <footer class="post-footer d-flex align-items-center"><a routerLink="/post/4" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar"><img src="/assets/img/user.svg" alt="..." class="img-fluid"></div>
                 <div class="title"><span>{{blogPosts[4].postedBy}}</span></div></a>
               <div class="date"><i class="icon-clock"></i>{{blogPosts[4].postDate}}</div>
@@ -69,11 +69,11 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>{{blogPosts[5].category}}</a></div><a routerLink="/post">
+              <div class="category"><a routerLink="/post/5">{{blogPosts[5].category}}</a></div><a routerLink="/post/5">
                 <h2 class="h4">{{blogPosts[5].title}}</h2></a>
             </header>
             <p [innerHtml]="blogPosts[5].post"></p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink class="author d-flex align-items-center flex-wrap">
+            <footer class="post-footer d-flex align-items-center"><a routerLink="/post/5" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar"><img src="/assets/img/user.svg" alt="..." class="img-fluid"></div>
                 <div class="title"><span>{{blogPosts[5].postedBy}}</span></div></a>
               <div class="date"><i class="icon-clock"></i>{{blogPosts[5].postDate}}</div>
@@ -91,7 +91,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2><a routerLink class="hero-link">View More</a>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2><a routerLink="/blog" class="hero-link">View More</a>
       </div>
     </div>
   </div>
@@ -105,33 +105,33 @@
     </header>
     <div class="row">
       <div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="{{blogPosts[0].featuredImage}}" alt="..." class="img-fluid"></a></div>
+        <div class="post-thumbnail"><a routerLink="/post/0"><img src="{{blogPosts[0].featuredImage}}" alt="..." class="img-fluid"></a></div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
             <div class="date">{{blogPosts[0].postDate | date}}</div>
-            <div class="category"><a routerLink>{{blogPosts[0].category}}</a></div>
-          </div><a routerLink="/post">
+            <div class="category"><a routerLink="/post/0">{{blogPosts[0].category}}</a></div>
+          </div><a routerLink="/post/0">
             <h3 class="h4">{{blogPosts[0].title}}</h3></a>
           <p class="text-muted" [innerHtml]="blogPosts[0].post"></p>
         </div>
       </div>
       <div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="{{blogPosts[1].featuredImage}}" alt="..." class="img-fluid"></a></div>
+        <div class="post-thumbnail"><a routerLink="/post/1"><img src="{{blogPosts[1].featuredImage}}" alt="..." class="img-fluid"></a></div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
             <div class="date">{{blogPosts[1].postDate | date}}</div>
-            <div class="category"><a routerLink>{{blogPosts[1].category}}</a></div>
-          </div><a routerLink="/post">
+            <div class="category"><a routerLink="/post/1">{{blogPosts[1].category}}</a></div>
+          </div><a routerLink="/post/1">
             <h3 class="h4">{{blogPosts[1].title}}</h3></a>
           <p class="text-muted" [innerHtml]="blogPosts[1].post"></p>
         </div>
       </div><div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="{{blogPosts[2].featuredImage}}" alt="..." class="img-fluid"></a></div>
+        <div class="post-thumbnail"><a routerLink="/post/2"><img src="{{blogPosts[2].featuredImage}}" alt="..." class="img-fluid"></a></div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
             <div class="date">{{blogPosts[2].postDate | date}}</div>
-            <div class="category"><a routerLink>{{blogPosts[2].category}}</a></div>
-          </div><a routerLink="/post">
+            <div class="category"><a routerLink="/post/2">{{blogPosts[2].category}}</a></div>
+          </div><a routerLink="/post/2">
             <h3 class="h4">{{blogPosts[2].title}}</h3></a>
           <p class="text-muted" [innerHtml]="blogPosts[2].post"></p>
         </div>
