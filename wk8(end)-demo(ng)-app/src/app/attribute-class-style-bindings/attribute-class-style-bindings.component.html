@@ -1,0 +1,28 @@
+
+<h2>Attribute, Class, Style Bindings Component</h2>
+    
+<table class="table table-bordered">
+    <thead>
+        <tr>            
+            <th [attr.colspan]="headerSpan">Table Header (Attribute binding)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- truthy falsy -->
+            <td [class.table-warning]="showWarning">Column 1 (Class binding)</td>
+            <td [class.table-warning]="!showWarning">Column 2</td>
+        </tr>
+        <tr>
+            <!-- null check -->
+            <td [style.background-color]="grayBackground" >Column 3 (Style binding)</td>
+            <td [style.background-color]="showBackground ? grayBackground : 'yellow'">Column 4</td>
+        </tr>
+    </tbody>
+</table>
+
+            
+            
+            
+
+

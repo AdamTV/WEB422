@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "web422-a4"
+    }
+  },
+  "defaultProject": "web422-a4",
+  "cli": {
+    "analytics": "4dac46b2-5ee7-4cb2-a22d-6f85356f2e64"
+  }
 }

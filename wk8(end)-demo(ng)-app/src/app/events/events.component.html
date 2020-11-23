@@ -1,0 +1,30 @@
+
+
+<div class="card card-body bg-light">
+
+    <h2>Events Component</h2>
+    <p>In Events Component, i.e. the parent component, the eceived messages:</p>
+    <ol>
+        <li *ngFor="let msg of messages"> {{msg}} </li>
+    </ol>
+
+    <app-child (btnClicked)="logClick($event)"></app-child>
+
+</div>
+
+<br><hr>
+
+<h2>Show posts in pages</h2>
+<h3>
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 1 }">➀</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 2 }">➁</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 3 }">➂</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 4 }">➃</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 5 }">➄</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 6 }">➅</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 7 }">➆</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 8 }">➇</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 9 }">➈</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 10 }">➉</a>&nbsp;
+
+</h3>

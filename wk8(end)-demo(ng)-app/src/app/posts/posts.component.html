@@ -1,0 +1,28 @@
+<h1>List of Posts</h1>
+
+<table class="table table-bordered">
+  <tr>
+    <th>ID</th>
+    <th>User ID</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let post of posts">
+    <td>{{post.id}}</td>
+    <td>{{post.userId}}</td>
+    <td>
+      <!-- linking to parameterized route -->
+        <a [routerLink]="['/posts', post.id]">
+            {{post.title}}
+        </a>
+    </td>
+    <td (click)="goToPosts(post.id)"><mark>{{post.body}}</mark></td>
+  </tr>
+  <!-- <tr *ngFor="let post of posts" (click)="goToPosts(post.id)">
+    <td>{{post.id}}</td>
+    <td>{{post.userId}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+  </tr> -->
+</table>
+
