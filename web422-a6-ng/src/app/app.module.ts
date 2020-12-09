@@ -18,6 +18,10 @@ import { PostDataComponent } from './post-data/post-data.component';
 import { FooterPostsComponent } from './footer-posts/footer-posts.component';
 import { HttpClientModule } from "@angular/common/http";
 import { PagingComponent } from './paging/paging.component';
+import { FormsModule } from '@angular/forms';
+import { PostsTableComponent } from './posts-table/posts-table.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
+import { NewPostComponent } from './new-post/new-post.component';
 
 
 @NgModule({
@@ -36,12 +40,16 @@ import { PagingComponent } from './paging/paging.component';
     TagsComponent,
     PostDataComponent,
     FooterPostsComponent,
-    PagingComponent
+    PagingComponent,
+    PostsTableComponent,
+    EditPostComponent,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
